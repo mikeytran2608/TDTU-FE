@@ -6,18 +6,13 @@
 
 html {
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
-
-#main {
-
-}
-
 /* ---------------Menu-left--------------- */
 
 .header {
     height: 47px;
-    background-color: #1A73E8;
+    background-color: #1a73e8;
     padding: 0 80px;
     position: fixed;
     top: 0;
@@ -35,21 +30,27 @@ html {
     position: relative; /* set lớp cha relative để thằng con nằm trong nó */
 }
 
-.nav-left .sub-truong, .nav-left .sub-khoa, 
-.nav-left .sub-vien, .nav-left .sub-trungtam {
+.nav-left .sub-truong,
+.nav-left .sub-khoa,
+.nav-left .sub-vien,
+.nav-left .sub-trungtam {
     display: none; /* ẩn nội dung */
     position: absolute; /* set lớp con thẳng hàng trong lớp cha và cha với có position */
-    background-color: #1A73E8;
+    background-color: #1a73e8;
     width: max-content; /* cho nội dung cho độ dài cao nhất */
 }
 
-.nav-left .sub-truong li, .nav-left .sub-khoa li, 
-.nav-left .sub-vien li, .nav-left .sub-trungtam li {
+.nav-left .sub-truong li,
+.nav-left .sub-khoa li,
+.nav-left .sub-vien li,
+.nav-left .sub-trungtam li {
     display: block; /* cho li xuống dòng và thẳng hàng so với lớp cha */
 }
 
-.nav-left .sub-truong a, .nav-left .sub-khoa a, 
-.nav-left .sub-vien a, .nav-left .sub-trungtam a {
+.nav-left .sub-truong a,
+.nav-left .sub-khoa a,
+.nav-left .sub-vien a,
+.nav-left .sub-trungtam a {
     padding: 0 36px;
     line-height: 38px; /* cho nội dung thẳng theo chiều dọc */
 }
@@ -59,17 +60,22 @@ html {
     text-decoration: none; /* ẩn dấu gạch chân */
     line-height: 47px; /* cho nội dung thẳng theo chiều dọc */
     padding: 0 10px;
-    display: block;  /* Nó bắt đầu trên một dòng mới và chiếm toàn bộ chiều rộng */
+    display: block; /* Nó bắt đầu trên một dòng mới và chiếm toàn bộ chiều rộng */
 }
 
-.nav-left > li:hover > a, .nav-left .sub-truong li:hover a, .nav-left .sub-khoa li:hover a,
-.nav-left .sub-vien li:hover a, .nav-left .sub-trungtam li:hover a {
-    background-color: #1A73E8;
+.nav-left > li:hover > a,
+.nav-left .sub-truong li:hover a,
+.nav-left .sub-khoa li:hover a,
+.nav-left .sub-vien li:hover a,
+.nav-left .sub-trungtam li:hover a {
+    background-color: #1a73e8;
     color: #000;
 }
 
-.nav-left li:hover .sub-truong, .nav-left li:hover .sub-khoa, 
-.nav-left li:hover .sub-vien, .nav-left li:hover .sub-trungtam {
+.nav-left li:hover .sub-truong,
+.nav-left li:hover .sub-khoa,
+.nav-left li:hover .sub-vien,
+.nav-left li:hover .sub-trungtam {
     display: block; /* hiển thị khi trỏ chuột */
 }
 
@@ -107,7 +113,7 @@ html {
 }
 
 .menu-right .nav-right li:hover a {
-    background-color: #1A73E8;
+    background-color: #1a73e8;
     color: #000;
     display: block;
 }
@@ -127,8 +133,8 @@ html {
 
 .sidebar-section a {
     font-size: 16px;
-    font-family: 'Nunito',sans-serif;
-    color: #DE0405;
+    font-family: "Nunito", sans-serif;
+    color: #de0405;
     text-decoration: none;
 }
 
@@ -137,7 +143,8 @@ html {
     font-size: 21.5px;
 }
 
-.sidebar .sidebar-section .section-logo, .section-heading {
+.sidebar .sidebar-section .section-logo,
+.section-heading {
     position: absolute;
 }
 
@@ -170,7 +177,6 @@ html {
 }
 
 .content-row {
-    
 }
 
 .content-row img {
@@ -207,7 +213,7 @@ html {
 }
 
 .content-col a:hover {
-    color: #DE0405;
+    color: #de0405;
 }
 
 .content-col p {
@@ -223,9 +229,9 @@ html {
 
 .content-page a {
     text-decoration: none;
-    color: #1A73E8;
+    color: #1a73e8;
     padding: 5px;
-    border:#000 solid 1px;
+    border: #000 solid 1px;
     font-size: 14px;
 }
 
@@ -234,10 +240,72 @@ html {
 }
 
 /* ---------------------------------Footer Top---------------------------------------- */
-
 .footer-top {
     height: 300px;
-    background-color: #1A73E8;
+    background-color: #0352a5;
+}
+
+.main-content {
+    margin: 0 69px;
+}
+
+.footer-top .row {
+    display: flex;
+    padding: 32px 0;
+}
+
+.footer-top ul {
+    list-style: none;
+}
+
+.footer-top .title {
+    line-height: 1.75;
+}
+
+.footer-top .column {
+    width: 21.6%;
+}
+
+.footer-top .column:first-child {
+    width: 35%;
+    text-align: end;
+    border-right: 1px solid #fff;
+    margin-right: 50px;
+    padding-right: 70px;
+}
+
+.footer-top .column a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 0;
+    line-height: 1.86;
+}
+
+.footer-top .column h4 {
+    font-size: 16px;
+    font-weight: unset;
+    color: #fff;
+    text-shadow: 0px 1px 1px #4d4d4d;
+}
+
+.footer-top .column .address {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.86;
+}
+
+.footer-top .img-footer {
+    margin-top: 15px;
+    width: 150px;
+    height: 68px;
+}
+
+.footer-top .socials img {
+    width: 25px;
+    height: 25px;
 }
 
 /* ---------------------------------Footer Bottom---------------------------------------- */
@@ -246,11 +314,9 @@ html {
     background-color: #000;
 }
 
-.footer-bottom p{
+.footer-bottom p {
     color: #fff;
     text-align: center;
     line-height: 54px;
     font-size: 14px;
 }
-
-
